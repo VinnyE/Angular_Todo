@@ -1,0 +1,22 @@
+@import '_reset.scss';
+
+.container {
+  width: 35em;
+  margin: 10% auto;
+}
+
+.heading {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
+li {
+  text-align: left;
+}
+
+.completed-todo {
+  text-decoration: line-through;
+}

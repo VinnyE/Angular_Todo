@@ -4,14 +4,15 @@ app.controller('mainCtrl', function($scope) {
 
   $scope.addTodo = function(todo) {
     $scope.todos.push({
-      name: todo
+      name: todo,
+      completed: false
     });
 
     $scope.newTodo = '';
-  }
+  };
 
   $scope.deleteTodo = function($index) {
     console.log('deleting:' + $index);
     $scope.todos.splice($index, 1);
-  }
+  };
 });
