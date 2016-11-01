@@ -2,7 +2,7 @@
 <div ng-controller="mainCtrl">
 
   <form>
-    <input type="text" ng-model="newTodo"/>
+    <input type="text" ng-model="newTodo" value="todo" placeholder="Enter new todo.."/>
     <button ng-click="addTodo(newTodo)">Add Todo</button>
   </form>
 
@@ -10,7 +10,7 @@
     <li ng-repeat="todo in todos">
       <input type="checkbox" ng-click="todo.completed = !todo.completed"/>
       <label ng-hide="editing" ng-click="editing = true" ng-class="{'completed-todo': todo.completed}">{{todo.name}}</label>
-      <input ng-show="editing" ng-model="todo.name" ng-blur="editing = false" type="text" />
+      <input ng-show="editing" ng-model="todo.name" ng-blur="editing = false" type="text" autofocus/>
       <span ng-click="deleteTodo($index)">X</span>
     </li>
   </ul>

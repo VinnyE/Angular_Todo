@@ -403,22 +403,69 @@ template {
   display: none; }
 
 * {
-  list-style: none; }
+  list-style: none;
+  box-sizing: border-box; }
+
+body {
+  background: #FFF0A5;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.5; }
 
 .container {
   width: 35em;
-  margin: 10% auto; }
+  margin: 5% auto; }
 
 .heading {
-  text-align: center; }
+  text-align: center;
+  color: #8E2800; }
 
 form {
   text-align: center; }
 
+input[value=todo] {
+  border: 1px solid black;
+  margin-bottom: 1em; }
+
+input[type=text] {
+  padding: .5em;
+  border: none;
+  border-radius: .25em;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  outline: none; }
+
+ul {
+  padding: 0; }
+
 li {
-  text-align: left; }
+  text-align: left;
+  padding: .5em 3.5em .5em 1.5em;
+  font-weight: 500;
+  border-top: 0.2em solid #df8163;
+  position: relative; }
+
+span {
+  font-weight: bold;
+  float: right;
+  cursor: pointer;
+  color: #B64926;
+  position: absolute;
+  right: 1.5em;
+  top: 25%; }
+  span:hover {
+    color: #d65f39; }
 
 .completed-todo {
   text-decoration: line-through; }
+
+button {
+  border: none;
+  outline: none;
+  padding: .5em .25em;
+  border-radius: .25em;
+  color: white;
+  background-color: #468966;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); }
 
 /*# sourceMappingURL=styles.css.map */

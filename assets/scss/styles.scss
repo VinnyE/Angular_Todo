@@ -1,22 +1,68 @@
 @import '_reset.scss';
+@import '_config.scss';
 
+body {
+  background: $vis;
+  font-family: $font-stack;
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
 .container {
   width: 35em;
-  margin: 10% auto;
+  margin: 5% auto;
 }
 
 .heading {
   text-align: center;
+  color: #8E2800;
 }
-
 form {
   text-align: center;
 }
-
+input[value=todo] {
+  border: 1px solid black;
+  margin-bottom: 1em;
+}
+input[type=text] {
+  padding: .5em;
+  border: none;
+  border-radius: .25em;
+  box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+  outline: none;
+}
+ul {
+  padding: 0;
+}
 li {
   text-align: left;
+  padding: .5em 3.5em .5em 1.5em;
+  font-weight: 500;
+  border-top: .2em solid lighten($paarl, 20%);
+  position: relative;
 }
-
+span {
+  font-weight: bold;
+  float: right;
+  cursor: pointer;
+  color: $paarl;
+  position: absolute;
+  right: 1.5em;
+  top: 25%;
+  &:hover {
+    color: lighten($paarl, 10%);
+  }
+}
 .completed-todo {
   text-decoration: line-through;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: .5em .25em;
+  border-radius: .25em;
+  color: white;
+  background-color: $viridian;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0,0,0,.2);
 }
