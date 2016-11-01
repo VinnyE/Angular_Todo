@@ -7,21 +7,13 @@
   <title>Angular Todo</title>
 </head>
 <body ng-app="todoList">
-  <div ng-controller="mainCtrl">
-    <h1>Todo List</h1>
-    <input type="text" ng-model="newTodo"/>
-    <button ng-click="addTodo(newTodo)">Add Todo</button>
-    <ul>
-      <li ng-class="{'editing-todo': editing}" ng-repeat="todo in todos">
-        <label ng-hide="editing">{{todo.name}}</label>
-        <input ng-show="editing" ng-model="todo.name" type="text" />
-        <button ng-click="deleteTodo($index)">Delete</button>
-        <button ng-click="editing = !editing">Edit</button>
-      </li>
-    </ul>
+  <div todos>
+    
   </div>
 
   <script src="app/scripts/angular.min.js"></script>
   <script src="app/app.js"></script>
+  <script src="app/controllers/mainCtrl.js"></script>
+  <script src="app/directives/todos.js"></script>
 </body>
 </html>
