@@ -6,7 +6,7 @@ app.controller('mainCtrl', function($scope) {
 
   $scope.addTodo = function(todo) {
     $scope.todos.push({
-      todo: todo
+      name: todo
     });
 
     $scope.newTodo = '';
