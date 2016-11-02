@@ -1,1 +1,1 @@
-A simply todo app that I'll be working on to practice with Angular. 
+A simple to do app I worked on with the purpose of exploring Angular. 
