@@ -1,4 +1,7 @@
-app.controller('mainCtrl', ['$scope', function($scope) {
+var angular = require('angular');
+
+angular.module('todoList')
+  .controller('mainCtrl', ['$scope', function($scope) {
 
   $scope.todos = [];
 
@@ -16,7 +19,7 @@ app.controller('mainCtrl', ['$scope', function($scope) {
   };
 
   $scope.clearCompletedTodo = function() {
-    $scope.todos = $scope.todos.filter(function(todo) {    
+    $scope.todos = $scope.todos.filter(function(todo) {
       return todo.completed !== true;
     });
   };

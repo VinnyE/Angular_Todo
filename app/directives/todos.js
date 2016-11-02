@@ -1,4 +1,7 @@
-app.directive('todos', function() {
+var angular = require('angular');
+
+angular.module('todoList')
+  .directive('todos', function() {
   return {
     templateUrl: 'app/views/todos.html',
     restrict: 'A'

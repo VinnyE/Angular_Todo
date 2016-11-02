@@ -1,0 +1,25 @@
+{
+  "name": "Angular_Todo",
+  "version": "1.0.0",
+  "description": "A simple to do app I worked on with the purpose of exploring Angular.",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VinnyE/Angular_Todo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VinnyE/Angular_Todo/issues"
+  },
+  "homepage": "https://github.com/VinnyE/Angular_Todo#readme",
+  "devDependencies": {
+    "angular": "^1.5.8",
+    "webpack": "^1.13.3"
+  }
+}
