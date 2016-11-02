@@ -32,6 +32,7 @@ input[type=text] {
 }
 ul {
   padding: 0;
+  margin-bottom: 3em;
 }
 li {
   text-align: left;
@@ -40,7 +41,7 @@ li {
   border-top: .2em solid lighten($paarl, 20%);
   position: relative;
 }
-span {
+.delete {
   font-weight: bold;
   float: right;
   cursor: pointer;
@@ -65,4 +66,10 @@ button {
   background-color: $viridian;
   cursor: pointer;
   box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+
+}
+
+.clear {
+  background-color: $paarl;
+  float: right;
 }

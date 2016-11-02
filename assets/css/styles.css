@@ -435,7 +435,8 @@ input[type=text] {
   outline: none; }
 
 ul {
-  padding: 0; }
+  padding: 0;
+  margin-bottom: 3em; }
 
 li {
   text-align: left;
@@ -444,7 +445,7 @@ li {
   border-top: 0.2em solid #df8163;
   position: relative; }
 
-span {
+.delete {
   font-weight: bold;
   float: right;
   cursor: pointer;
@@ -452,7 +453,7 @@ span {
   position: absolute;
   right: 1.5em;
   top: 25%; }
-  span:hover {
+  .delete:hover {
     color: #d65f39; }
 
 .completed-todo {
@@ -467,5 +468,9 @@ button {
   background-color: #468966;
   cursor: pointer;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); }
+
+.clear {
+  background-color: #B64926;
+  float: right; }
 
 /*# sourceMappingURL=styles.css.map */

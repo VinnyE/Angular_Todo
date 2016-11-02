@@ -1,4 +1,4 @@
-app.controller('mainCtrl', function($scope) {
+app.controller('mainCtrl', ['$scope', function($scope) {
 
   $scope.todos = [];
 
@@ -12,7 +12,12 @@ app.controller('mainCtrl', function($scope) {
   };
 
   $scope.deleteTodo = function($index) {
-    console.log('deleting:' + $index);
     $scope.todos.splice($index, 1);
   };
-});
+
+  $scope.clearCompletedTodo = function() {
+    $scope.todos = $scope.todos.filter(function(todo) {    
+      return todo.completed !== true;
+    });
+  };
+}]);
