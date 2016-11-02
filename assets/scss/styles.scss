@@ -5,23 +5,30 @@ body {
   background: $vis;
   font-family: $font-stack;
   font-size: 1.15rem;
-  line-height: 1.5;
+  line-height: 1.25;
 }
 .container {
-  width: 35em;
+  width: 60%;
+  max-width: 45em;
   margin: 5% auto;
+  @media (max-width: 35em) {
+    width: 80%;
+  }
 }
-
 .heading {
   text-align: center;
-  color: #8E2800;
+  color: $peruTan;
 }
+/** form **/
 form {
   text-align: center;
 }
 input[value=todo] {
   border: 1px solid black;
   margin-bottom: 1em;
+  @media (max-width: 35em) {
+    width: 100%;
+  }
 }
 input[type=text] {
   padding: .5em;
@@ -30,6 +37,7 @@ input[type=text] {
   box-shadow: 2px 2px 5px rgba(0,0,0,.2);
   outline: none;
 }
+/** todo list **/
 ul {
   padding: 0;
   margin-bottom: 3em;
@@ -57,6 +65,7 @@ li {
   text-decoration: line-through;
 }
 
+/** buttons **/
 button {
   border: none;
   outline: none;
@@ -66,9 +75,11 @@ button {
   background-color: $viridian;
   cursor: pointer;
   box-shadow: 2px 2px 5px rgba(0,0,0,.2);
-
+  @media (max-width: 35em) {
+    display: block;
+    width: 100%;
+  }
 }
-
 .clear {
   background-color: $paarl;
   float: right;
